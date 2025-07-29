@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header >
+    <div class="bg-violet-900 md:flex md:flex-row md:justify-between fixed md:auto  md:h-auto md:w-auto flex-col justify-around text-white  md:relative  h-96 w-full hidden z-40 top-0 " id="menu"> 
+    
+        <div>
+        <h1 class="md:text-3xl bg-violet-900 md:pl-20 pl-3  md:font-garet-bold hidden md:block">NEWLINE</h1>
+        </div>
+
+        <div >
+            <ul class="flex flex-col items-center space-y-8 md:space-y-0 mt-28 md:mt-0 justify-items-center  md:flex-row space-x-2 md:space-x-0  md:pr-20 md:pt-2 text-sm md:content-center md:font-semibold ">
+                <li class="md:pr-5"><a href="#sobre">Sobre</a></li>
+                <li class="md:pr-5"><a href="#promocoes">Promoções</a></li>
+                <li class="md:pr-5"><a href="#lancamentos">Lançamentos</a></li>
+                <li class="md:pr-5 "><a href="#dicas">Dicas</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="w-full bg-violet-900 flex md:hidden justify-between fixed z-50" >
+        <div>
+            <h1 class="text-2xl bg-violet-900 pl-3 mt-1 mb-1 font-garet-bold text-white">NEWLINE</h1>
+            </div>
+            <div class="flex flex-col justify-between pr-3 mt-1 mb-1 z-50" id="btnmenu">
+            <span class="w-9 h-1 bg-white"></span>
+            <span class="w-9 h-1 bg-white "></span>
+            <span class="w-9 h-1 bg-white "></span>
+            </div>
+    </div>
+</header>
+<main class="overflow-hidden">
+
+    <section class=" bg-yellow-400 flex flex-row h-auto relative  ">
+       
+        <img src="woman.png" class="size-4/5 z-10 hidden md:block">
+
+       <div class="absolute bg-yellow-400 md:left-80 pl-9 md:ml-80 gap-1">
+
+        <h2 class="md:text-6xl text-4xl text-violet-900 font-extrabold md:mt-40 mt-20">ALÔ VERÃO!</h2>
+
+        <div class="w-60 ">
+        <hr class="mt-0.5 h-1.5 md:w-80  bg-pink-500 text-pink-500"></hr>
+        <p class="pt-6 text-violet-900 md:text-lg font-medium ">O verão mal começou, mas o clima já esquentou por aqui.</p>
+        <p class="pt-6 text-violet-900 md:text-lg font-medium">Confira as melhores opções para maximizar o poder do seu cabelo natural na estação mais esperada!</p>
+        </div>
+        
+        <h1 class="md:text-9xl text-5xl rotate-90 text-white font-bold md:ml-64 ml-36 md:p-14 md:tracking-wider
+        tracking-widest md:opacity-55 opacity-45 pt-4 absolute bottom-32 md:bottom-1 z-0">NOVIDADES</h1>  
+        
+       </div>
+ 
+
+    </section>
+
+    <section class="flex flex-row justify-center ">
+        <div class="bg-pink-600 w-6/12 h-20 absolute bottom-0.5 md:block hidden"> </div>
+        <div class="bg-violet-900 w-6/12 h-9 absolute bottom-0.5 md:block hidden"></div>
+    </section>
+    
+    <section id="sobre" class=" h-auto bg-yellow-400 flex md:flex-row flex-col md:pt-60 pt-96  md:space-x-7 px-4 md:py-9 md:justify-around ">
+
+        <div class="flex flex-col items-center max-w-md">
+            
+            <div class="h-14 mt-14 md:mt-0 bg-pink-800 rounded-md py-1 md:w-auto w-64 "><h1 class="md:text-5xl text-2xl font-serif font-bold text-center text-yellow-400 ">Quem somos nós?</h1></div>
+            <div class="text-center text-lg pt-7 text-pink-800">Somos uma rede de mulheres negras que busca elevar a sua auto estima através dos nossos produtos! </div>
+            <div class="text-center text-lg pt-7 text-pink-800">Acreditamos que a nossa melhor maquiagem é o cabelo, e por isso te entregamos o melhor para o seu cabelo natural</div>
+        </div>
+
+        <img  src="donas.png" alt="foto das empresárias"  class="flex-shrink-0 max-w-md">
+
+    </section>
+      
+    <div class="flex flex-col md:float-right md:mt-16 ">
+
+        <div class=" bg-violet-900 md:w-96 h-6 "></div>
+        <div class="bg-pink-600 md:w-96 h-7 bottom-0.5"></div>
+
+    </div>
+
+    <section id="promocoes" class="h-auto bg-yellow-400 py-40">
+
+        
+
+        <h1 class="text-center md:text-5xl text-3xl text-pink-800 font-bold">PROMOÇÕES DO MÊS</h1>
+
+        <div class="flex flex-col md:flex-row pt-24 space-x-2 space-y-16 md:space-y-0 justify-around  items-baseline">
+
+            <div class="flex flex-col items-center hover:scale-110 transition duration-700 ease-in-out">
+            <figure><img src="produto1.png" alt="foto do kit" width="200"></figure>
+            <figcaption class="font-semibold text-violet-900 text-center px-28">Kit Shampoo, Condicionador, Óleo de coco e Creme de Pentear</figcaption>
+            </div>
+            
+            <div class="flex flex-col items-center hover:scale-110 transition duration-700 ease-in-out">
+                <figure><img src="produto2.png" alt="foto do kit" width="200"></figure>
+                <figcaption class="font-semibold text-violet-900 text-center px-28"> Kit Shampoo, Creme de hidratação, e Pente desembaraçante </figcaption>
+            </div>
+
+            <div class="flex flex-col items-center hover:scale-110 transition duration-700 ease-in-out">
+            <figure><img src="produto3.png" alt="foto do kit" width="200" ></figure>
+            <figcaption class="font-semibold text-violet-900 text-center px-28">Kit Shampoo, Condicionador, Óleo de coco e pomada modeladora</figcaption>
+            </div>
+       </div>
+
+       <div class="flex flex-col mt-14 ">
+
+        <div class=" bg-violet-900 w-96 h-6 md:block hidden"></div>
+        <div class="bg-pink-600 w-96 h-7 bottom-0.5 md:block hidden" ></div>
+
+    </div>
+</section>
+
+    <div class="flex flex-col float-right mt-5 drop-shadow-lg">
+
+        <div class=" bg-violet-900 h-6 " style="width:900px"></div>
+        <div class="bg-pink-600  h-7 bottom-0.5 flex max-w-8/10" ></div>
+
+    </div>
+
+
+
+   
+    <section id="lancamentos" class="h-auto bg-yellow-400 ">
+        <h1 class="md:ml-44 md:text-5xl text-3xl md:text-left text-center text-violet-900 font-bold pt-28">LANÇAMENTOS</h1>
+
+        <div class="flex md:flex-row flex-col justify-around md:pb-24 space-y-24 md:space-y-0">
+
+        <div >
+            
+            <figure class="flex flex-col items-center md:pt-36 pt-16 space-y-4 md:space-y-0 hover:scale-110 transition duration-700 ease-in-out">
+                <img src="produto4.png" alt="foto de produtos de cabelo" width="200" class="drop-shadow-2xl ">
+                <figcaption class="font-semibold text-violet-900 text-center ">Shampoo e Condicionador de óleo de macadamia</figcaption>
+
+            </figure>
+            
+        </div>
+
+        <div >
+            <figure class="flex flex-col items-center space-y-4 md:space-y-0 hover:scale-110 transition duration-700 ease-in-out">
+                <img src="produto5.png" alt="foto de produtos de cabelo" width="200 " class="drop-shadow-2xl">
+                <figcaption class="font-semibold text-violet-900 text-center ">Shampoo e Condicionador para definição de cachos</figcaption>
+    
+            </figure>
+    
+        </div>
+    </div>
+    
+
+    <div class="flex flex-col mt-5 ">
+
+        <div class=" bg-violet-900 h-6 md:block hidden" style="width:900px"></div>
+        <div class="bg-pink-600  h-7 bottom-0.5 md:block hidden" style="width:900px"></div>
+
+    </div>
+</section>
+
+    <section class="bg-yellow-400 " id="dicas">
+   <div ><h1 class=" pt-28 md:text-5xl text-4xl text-right  text-pink-700 font-bold mx-8 md:pr-20 md:pl-96">COMO MANTER O CABELO SAUDÁVEL NO VERÃO?</h1></div> 
+    
+      <div class="flex md:flex-row flex-col justify-around md:px-16 mx-8">
+        <div class="flex flex-shrink-0 ">
+            <img  src="meninasrindo.png" alt="foto de meninas sorrindo" width="450" class="ml-16 pl-16 pr-16 md:pl-0 md:pr-0">
+
+        </div>
+        
+         <div class=" text-right">
+            <p class=" md:ml-72 md:mr-10 text-lg pt-20 text-pink-800">Sol, praia e piscina são os queridinhos para curtir essa estação! Mas voce sabia que o nosso cabelo precisa de cuidado redobrado nesse período? <br><br>Tudo isso pode acabar danificando nossas madeixas e, cá entre nós, com a nossa auto estima também, não é mesmo? <br><br>Por isso, separamos dicas infáliveis para curtir esse verão da melhor forma!</p>
+         </div>
+      </div>
+
+    </section>
+    <footer>
+        <div class="bg-yellow-400 pt-16 pb-16">
+            <hr class="bg-violet-900">
+            <h2 class="text-3xl md:ml-72 md:pl-6 text-violet-900 pt-9 ml-9">NEWLINE</h2>
+            <div class="flex space-x-4 justify-around">
+                <div class="pt-5">
+                    <p class="text-white text-2xl">Nos encontre:</p>
+                    <div class="flex justify-between pt-3">
+                        <i class="fa fa-instagram text-violet-900" style="font-size:36px"> </i>
+                        <p class=" text-violet-900 text-md pt-1">@newlineoficial</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <i class="fa fa-whatsapp text-violet-900" style="font-size:36px"></i>
+                        <p class="text-violet-900 text-md pt-1">(11) 99000-0000</p>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-white text-2xl">Newline</p>
+                    <ul class="text-violet-900">
+                        <li ><a href="#sobre">Sobre</a></li>
+                        <li ><a href="#promocoes">Promoções</a></li>
+                        <li ><a href="#lancamentos">Lançamentos</a></li>
+                        <li ><a href="#dicas">Dicas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+   
+
+
+
+    
+
+</main>
+    </body>
+    <script src="script.js"></script>
+
+</html>
